@@ -23,7 +23,10 @@ async function fetchCharacters() {
 
     console.log(data);
 
-    cardContainer.append(CharacterCard());
+    cardContainer.innerHTML = ``;
+    data.results.forEach((result) => {
+        cardContainer.append(CharacterCard(result));
+    });
 }
 
 fetchCharacters();
