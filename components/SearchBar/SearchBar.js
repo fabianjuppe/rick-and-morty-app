@@ -17,7 +17,7 @@ export default function SearchBar(onSubmit) {
 
     const img = document.createElement("img");
     img.classList.add("search-bar__icon");
-    img.src = "../assets/magnifying-glass.png";
+    img.src = "../../assets/magnifying-glass.png";
     button.append(img);
 
     searchBar.addEventListener("submit", onSubmit);
